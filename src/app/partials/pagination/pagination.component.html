@@ -1,0 +1,11 @@
+<div class="pagination-wrap">
+    <nav aria-label="Page navigation">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" (click)="onPreviouse()" [ngClass]="{'disabled':this.currentPage<=1}">Previous</a></li>
+          <li class="page-item" *ngFor="let item of buttonCnt;let i= index;" [ngClass]="{'active': currentPage == i+1}">
+          <a class="page-link" (click)="onPageChange(i+1)">{{i+1}}</a>
+        </li>
+          <li class="page-item"><a class="page-link"  (click)="onNext()"  [ngClass]="{'disabled': this.currentPage>=this.totalPage}">Next</a></li>
+        </ul>
+      </nav>
+</div>

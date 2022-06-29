@@ -1,0 +1,25 @@
+.navbar {
+    /* background-color: #fb875d; */
+    background: #E5E3C9;
+    height: 78px;
+}
+.logout-btn {
+    margin: 8px 29px;
+    padding: 11px;
+    border-radius: 25px;
+    width: 103px;
+    background-color: #256774;
+    border-color: #256774;
+    color: #fff;
+}
+
+.home-icon{
+    margin: 6px 19px;
+    border-radius: 25px;
+    width: 117px;
+    background-color: #256774;
+    border-color: #256774;
+    color: #fff;
+    padding: 13px;
+    text-decoration: none;
+}
