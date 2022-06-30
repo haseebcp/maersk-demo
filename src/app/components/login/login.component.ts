@@ -30,7 +30,10 @@ export class LoginComponent implements OnInit ,OnDestroy {
       email: new FormControl("", [Validators.required, Validators.email]),
       password: new FormControl("", [Validators.required, Validators.minLength(6)])
     })
-
+    if(this.authService.hasToken()){
+      localStorage.removeItem("token");
+      this.authService.islogInSubject.next(false);
+    }
   }
   get f() {
     return this.loginForm.controls

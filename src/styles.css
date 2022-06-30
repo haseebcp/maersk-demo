@@ -112,6 +112,8 @@ body {
 @media only screen and (max-width : 480px) {
    .login-card {
     min-width: unset;
-    width:95%
+    width:95%;
+    height: 60%;
+    min-height: unset;
   }
 }
