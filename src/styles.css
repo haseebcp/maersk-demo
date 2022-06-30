@@ -1,93 +1,110 @@
 body {
-    height: 100%;
-    margin: 0px;
-    background: rgba(167,197,198,1);
-    
-  }
-  .hidden {
-    display: none !important;
-  }
-  .show-error {
-    display: block
-  }
-  .login-wrap {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    text-align: center;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,0.7287289915966386) 0%, rgba(9,121,84,1) 33%, rgba(42,156,180,0.4458158263305322) 100%);
-  }
-  .card {
-    border: 2px solid rgb(235 148 117);
-  }
-  .login-card {
-    position: absolute;
-    top: 150px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    min-width: 440Px;
-    min-height: 500px;
-    width: 440Px;
-    height: 500px;
-  }
-  .btn-login {
-    font-size: 0.9rem;
-    letter-spacing: 0.05rem;
-    padding: 0.75rem 1rem;
-  }
-  
-  .btn-google {
-    color: white !important;
-    background-color: #ea4335;
-  }
-  
-  .btn-facebook {
-    color: white !important;
-    background-color: #3b5998;
-  }
-  .invalid-input {
-    border-color: #ea4335;
-  }
-  .error-msg {
-    color: #ea4335;
-    padding: 6px 0;
-  }
-  .user-list-wrap {
-    margin-top: 50px;
-    text-align: center;
-  }
-  
-  .user-card-wrap {
-    margin: 10px;
-  }
-  .user-card-wrap .card-img-top {
-    border-radius: 50%;
-    padding: 15px;
-  }
+  height: 100%;
+  margin: 0px;
+  background: rgba(167, 197, 198, 1);
 
-  .alert-warning {
-    position: absolute;
-    color: #664d03;
-    background-color: #fff3cd;
-    border-color: #ffecb5;
-    top:20%;
-    width: 59%;
-    left: 22%;
-    text-align: center;
-    height: 500px;
 }
+
+.hidden {
+  display: none !important;
+}
+
+.show-error {
+  display: block
+}
+
+.login-wrap {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  text-align: center;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgba(2, 0, 36, 0.7287289915966386) 0%, rgba(9, 121, 84, 1) 33%, rgba(42, 156, 180, 0.4458158263305322) 100%);
+}
+
+.card {
+  border: 2px solid rgb(235 148 117);
+}
+
+.login-card {
+  position: absolute;
+  top: 150px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  min-width: 440Px;
+  min-height: 500px;
+  width: 440Px;
+  height: 500px;
+}
+
+.btn-login {
+  font-size: 0.9rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}
+
+.invalid-input {
+  border-color: #ea4335;
+}
+
+.error-msg {
+  color: #ea4335;
+  padding: 6px 0;
+}
+
+.user-list-wrap {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.user-card-wrap {
+  margin: 10px;
+}
+
+.user-card-wrap .card-img-top {
+  border-radius: 50%;
+  padding: 15px;
+}
+
+.alert-warning {
+  position: absolute;
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+  top: 20%;
+  width: 59%;
+  left: 22%;
+  text-align: center;
+  height: 500px;
+}
+
 .error-template {
   position: relative;
-  top:30%;
+  top: 30%;
 }
-  @media screen and (max-width: 1400px) {
-    .user-list-wrap {
-      justify-content: center;
-    }
+
+.form-control:focus {
+  outline: none;
+  outline:0;
+  box-shadow: none
+}
+
+@media screen and (max-width: 1400px) {
+  .user-list-wrap {
+    justify-content: center;
   }
-  
+}

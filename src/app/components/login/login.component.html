@@ -5,29 +5,28 @@
         <h5 class="card-title text-center mb-5 fw-light fs-5">Sign In</h5>
         <form [formGroup]="loginForm" (submit)="onLogin()">
           <div class="form-floating mb-3">
-            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="email" [ngClass]="{'invalid-input':f.email.errors && submitted}">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="email" [ngClass]="{'invalid-input':f.email.errors && f.email.touched}">
             <label for="floatingInput">Email address</label>
-            <div class="error-msg" *ngIf="f.email.errors && f.email.errors.required && submitted">
+            <div class="error-msg" *ngIf="f.email.errors && f.email.errors.required && f.email.touched">
               email is required
            </div>
-           <div class="error-msg" *ngIf="f.email.errors && f.email.errors.email && submitted">
+           <div class="error-msg" *ngIf="f.email.errors && f.email.errors.email && f.email.touched">
              Invalid email
           </div>
           </div>
           
           <div class="form-floating mb-3">
-            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password" [ngClass]="{'invalid-input':f.password.errors && submitted}">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password" formControlName="password" [ngClass]="{'invalid-input':f.password.errors && f.password.touched}">
             <label for="floatingPassword">Password</label>
-            <div class="error-msg" *ngIf="f.password.errors && f.password.errors.required && submitted">
+            <div class="error-msg" *ngIf="f.password.errors && f.password.errors.required && f.password.touched">
               password is required
            </div>
-           <div class="error-msg" *ngIf="f.password.errors && f.password.errors.minlength && submitted">
+           <div class="error-msg" *ngIf="f.password.errors && f.password.errors.minlength && f.password.touched">
             password must contain at least 6 character 
           </div>
           </div>
           <div class="d-grid">
-            <button class="btn btn-success btn-login text-uppercase fw-bold" type="submit">Sign
-              in</button>
+            <button class="btn btn-success btn-login text-uppercase fw-bold" type="submit" [disabled]="!loginForm.valid">Sign in</button>
           </div>
         </form>
       </div>
