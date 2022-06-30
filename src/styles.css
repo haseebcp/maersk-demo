@@ -108,7 +108,13 @@ body {
     justify-content: center;
   }
 }
-
+@media screen and (max-width: 1024px) and (max-height: 1310px) {
+  .login-card {
+    min-height: 410px;
+    height: 410px;
+    top:40px;
+  }
+}
 @media only screen and (max-width : 480px) {
    .login-card {
     min-width: unset;
