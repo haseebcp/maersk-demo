@@ -27,8 +27,8 @@ export class LoginComponent implements OnInit ,OnDestroy {
   submitted: boolean = false;
   ngOnInit(): void {
     this.loginForm = new FormGroup({
-      email: new FormControl("eve.holt@reqres.in", [Validators.required, Validators.email]),
-      password: new FormControl("cityslicka", [Validators.required, Validators.minLength(6)])
+      email: new FormControl("", [Validators.required, Validators.email]),
+      password: new FormControl("", [Validators.required, Validators.minLength(6)])
     })
 
   }
