@@ -30,15 +30,15 @@ body {
 
 .login-card {
   position: absolute;
-  top: 45px;
+  top: 150px;
   bottom: 0;
   left: 0;
   right: 0;
   margin: auto;
   min-width: 440Px;
-  min-height: 410px;
+  min-height: 500px;
   width: 440Px;
-  height: 410px;
+  height: 500px;
 }
 
 .btn-login {
@@ -108,21 +108,7 @@ body {
     justify-content: center;
   }
 }
-@media screen and (max-width: 1024px) and (max-height: 1310px) {
-  .login-card {
-    min-height: 410px;
-    height: 410px;
-    top:40px;
-  }
-}
 
-@media screen and (min-width: 1024px) and (max-height: 1310px) {
-  .login-card {
-    min-height: 500px;
-    height: 500px;
-    top:150px;
-  }
-}
 @media only screen and (max-width : 480px) {
    .login-card {
     min-width: unset;

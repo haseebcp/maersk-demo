@@ -45,8 +45,18 @@
     margin-top: 10px;
 }
 @media only screen and (max-width : 480px) {
-    .profile-img img {
-      height: 126px;
-      width: 121px;
+    .profile-img {
+        width: 100%;
+        margin: 19px 22px;
     }
-  }
+
+    .profile-img img {
+        height: 144px;
+        width: 171px;
+        margin: 0 40px;
+    }
+
+    .profile-wrap {
+        margin: 20px;
+    }
+}
